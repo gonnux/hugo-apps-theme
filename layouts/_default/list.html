@@ -1,6 +1,12 @@
 {{ define "main" }}
   {{ range .Pages }}
-    <h1>{{ .Title }}</h1>
-    <h2> is param full {{ .Params.full }} </h2>
+    <div style="display: inline-block; width:100px; vertical-align: top">
+      <a href="{{ .URL }}" style="text-decoration:none">
+        <div style="display: inline-block; border: 1px solid silver; border-radius: 1rem; width:100px; height: 100px"><img></img></div>
+      </a>
+      <a href="{{ .URL }}">
+        {{ .Title }}
+      </a>
+    </div>
   {{ end }}
 {{ end }}
