@@ -3,21 +3,16 @@
 {{ else }}
 <!DOCTYPE html>
 <html>
-{{/*
-    {{- partial "head.html" . -}}
-*/}}
 <body>
-{{/*
-  {{- partial "header.html" . -}}
-*/}}
-  <h1> header from baseof.html </h1>
+  {{/*
+    {{- partial "header.html" . -}}
+  */}}
+  <a href="{{ .Site.BaseURL }}">
+    <h1> {{ .Site.Title }} </h1>
+  </a>
   <div id="content">
     {{- block "main" . }}{{- end }}
   </div>
-  <h1> footer from baseof.html </h1>
-{{/*
-  {{- partial "footer.html" . -}}
-*/}}
 </body>
 </html>
 
