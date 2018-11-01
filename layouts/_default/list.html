@@ -1,5 +1,6 @@
 {{ define "main" }}
   {{ range .Pages }}
     <h1>{{ .Title }}</h1>
+    <h2> is param full {{ .Params.full }} </h2>
   {{ end }}
 {{ end }}
