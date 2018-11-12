@@ -8,4 +8,8 @@
 
 .apps-app-name { text-align: center; padding-top: 1rem; }
 
-.apps-app-name a { text-decoration: none; font-size: 1.2rem; }
+.apps-app-name a { text-decoration: none; font-size: 1.2rem; color: black; }
+
+.apps-app-name a:visited { color: black; }
+
+.apps-app-name a:hover { text-decoration: underline; }
