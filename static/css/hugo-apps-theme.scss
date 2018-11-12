@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+.apps-title {
+  color: black;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: black;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  hr {
+    border-bottom: 0rem;
+  }
+  .apps-title-title {
+    font-size: 2rem;
+  }
+}
+
 .apps-app-item {
   display: inline-block;
   width: 10rem;
@@ -25,7 +49,8 @@
   padding-top: 1rem;
   a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;
     color: black;
     &:visited {
       color: black;

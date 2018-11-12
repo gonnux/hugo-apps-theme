@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="/css/hugo-apps-theme.css"/>
 </head>
 <body>
-  <a href="{{ .Site.BaseURL }}">
-    <h1> {{ .Site.Title }} </h1>
-  </a>
+  <div class="apps-title">
+    <a href="../" style="float: left">Back</a>
+    <a href="{{ .Site.BaseURL }}" class="apps-title-title">
+      {{ .Site.Title }}
+    </a>
+    <hr/>
+  </div>
   <div id="content">
     {{- block "main" . }}{{- end }}
   </div>
