@@ -1,12 +1,16 @@
 {{ define "main" }}
   {{ range .Pages }}
-    <div style="display: inline-block; width:100px; vertical-align: top">
-      <a href="{{ .URL }}" style="text-decoration:none">
-        <div style="display: inline-block; border: 1px solid silver; border-radius: 1rem; width:100px; height: 100px"><img></img></div>
+    <div style="display: inline-block; width: 10rem; vertical-align: top">
+      <a href="{{ .URL }}" style="text-decoration: none; display: inline-block; width: 100%; height:10rem">
+        <div style="display: inline-block; border: 0.5rem solid silver; border-radius: 1.5rem; width:100%; height: 100%">
+          <img src="{{ .Params.img }}" style="width:100%; height:100%"/>
+	</div>
       </a>
-      <a href="{{ .URL }}">
-        {{ .Title }}
-      </a>
+      <div style="text-align:center; padding-top: 1rem">
+        <a href="{{ .URL }}" >
+          {{ .Title }}
+        </a>
+      </div>
     </div>
   {{ end }}
 {{ end }}

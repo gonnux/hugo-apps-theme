@@ -1,3 +1,4 @@
 +++
 full = false
+img = ""
 +++
