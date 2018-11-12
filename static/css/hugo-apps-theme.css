@@ -1,0 +1,11 @@
+.apps-app-item { display: inline-block; width: 10rem; vertical-align: top; margin-right: 1.5rem; }
+
+.apps-app-icon { display: inline-block; border: 0.5rem solid silver; border-radius: 1.5rem; width: 100%; height: 100%; }
+
+.apps-app-icon a { text-decoration: none; }
+
+.apps-app-icon img { width: 10rem; height: 10rem; }
+
+.apps-app-name { text-align: center; padding-top: 1rem; }
+
+.apps-app-name a { text-decoration: none; font-size: 1.2rem; }
