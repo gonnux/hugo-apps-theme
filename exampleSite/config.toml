@@ -3,3 +3,17 @@ languageCode = "en-us"
 title = "Hugo Apps Theme"
 
 paginate = 10
+[[menu.main]]
+  name = "About"
+  weight = 1
+  url = "/about"
+
+[[menu.main]]
+  name = "Apps"
+  weight = 2
+  url = "/apps"
+
+[[menu.main]]
+  name = "Github"
+  weight = 3
+  url = "https://github.com/gonapps"

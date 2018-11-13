@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-.apps-title {
-  text-decoration: none;
-  text-align: center;
+body {
+  background-color: silver; }
+
+.apps-header {
+  color: black;
   font-family: 'Press Start 2P', cursive;
-  color: black; }
-  .apps-title a {
-    text-decoration: none; }
-    .apps-title a:visited {
+  text-align: center; }
+  .apps-header a {
+    text-decoration: none;
+    color: black; }
+    .apps-header a:visited {
       color: black; }
-    .apps-title a:hover {
+    .apps-header a:hover {
       text-decoration: underline; }
-  .apps-title hr {
-    border-bottom: 0rem; }
-  .apps-title .apps-title-title {
-    font-size: 2rem; }
+  .apps-header hr {
+    border: 0;
+    height: 1px;
+    background: white; }
+  .apps-header .apps-header-title {
+    font-size: 2.5rem; }
 
 .apps-app-item {
   display: inline-block;
@@ -23,10 +28,12 @@
 
 .apps-app-icon {
   display: inline-block;
-  border: 0.5rem solid silver;
+  border: 0.5rem solid white;
   border-radius: 1.5rem;
-  width: 100%;
-  height: 100%; }
+  width: 10rem;
+  height: 10rem;
+  padding-bottom: 0;
+  overflow: hidden; }
   .apps-app-icon a {
     text-decoration: none; }
   .apps-app-icon img {

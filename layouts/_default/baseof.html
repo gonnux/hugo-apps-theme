@@ -7,13 +7,20 @@
   <link rel="stylesheet" href="/css/hugo-apps-theme.css"/>
 </head>
 <body>
-  <div class="apps-title">
-    <a href="../" style="float: left">Back</a>
-    <a href="{{ .Site.BaseURL }}" class="apps-title-title">
-      {{ .Site.Title }}
-    </a>
+  <header class="apps-header">
+    <div>
+      <a href="../" style="float: left">Back</a>
+      <a href="{{ .Site.BaseURL }}" class="apps-header-title">
+        {{ .Site.Title }}
+      </a>
+    </div>
+    {{ with .Site.Menus.main }}
+      {{ range sort . }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    {{ end }}
     <hr/>
-  </div>
+  </header>
   <div id="content">
     {{- block "main" . }}{{- end }}
   </div>
