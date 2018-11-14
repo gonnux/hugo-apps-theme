@@ -1,3 +1,11 @@
 {{ define "main" }}
-<h1> INDEX PAGE </h1>
+  <div class="apps-text" style="margin-top: 2rem; margin-bottom: 2rem">
+    <img src="{{ .Site.Params.profile_img }}" style="width: 10rem; height: 10rem"/>
+    <h1>{{ .Site.Params.author }}</h1>
+  </div>
+  {{ with .Site.Params.social }}
+    {{ range sort . }}
+    <a class="apps-text" href="{{ .url }}">{{ .name }}</a>
+    {{ end }}
+  {{ end }}
 {{ end }}

@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 body {
   background-color: silver;
 }
+
 .apps-text {
   font-family: 'Press Start 2P', cursive;
 }
+
 .apps-header {
   color: black;
   font-family: 'Press Start 2P', cursive;
@@ -21,8 +24,10 @@ body {
   }
   hr {
     border: 0;
-    height: 1px;
-    background: white;
+    margin-top: 1rem;
+    height: 1rem;
+    width: 50%;
+    background: black;
   }
   .apps-header-title {
     font-size: 2.5rem;

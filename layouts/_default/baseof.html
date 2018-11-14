@@ -8,20 +8,22 @@
 </head>
 <body>
   <header class="apps-header">
-    <div>
+    <div style="margin-bottom:1rem">
       <a href="../" style="float: left">Back</a>
       <a href="{{ .Site.BaseURL }}" class="apps-header-title">
         {{ .Site.Title }}
       </a>
     </div>
     {{ with .Site.Menus.main }}
-      {{ range sort . }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ range $i, $e := sort . }}
+      <a href="{{ $e.URL }}" style="margin:0;{{ if $i }}padding-left: 1rem; border-left: 0.2rem solid black{{ end }}">
+        {{- $e.Name -}}
+      </a>
       {{ end }}
     {{ end }}
     <hr/>
   </header>
-  <div id="content">
+  <div id="content" style="text-align: center">
     {{- block "main" . }}{{- end }}
   </div>
 </body>

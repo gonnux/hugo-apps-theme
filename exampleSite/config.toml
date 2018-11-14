@@ -1,19 +1,39 @@
 baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Hugo Apps Theme"
-
 paginate = 10
+
+[params]
+  profile_img = "https://openclipart.org/download/103855/tux.svg"
+  author = "gonapps"
+
 [[menu.main]]
   name = "About"
   weight = 1
   url = "/about"
 
 [[menu.main]]
-  name = "Apps"
+  name = "Blog"
   weight = 2
-  url = "/apps"
+  url = "/blog"
+
 
 [[menu.main]]
-  name = "Github"
+  name = "Apps"
   weight = 3
+  url = "/apps"
+
+[[params.social]]
+  name = "Github"
+  weight = 1
   url = "https://github.com/gonapps"
+
+[[params.social]]
+  name = "Gitlab"
+  weight = 2
+  url = "https://gitlab.com/gonapps"
+
+[[params.social]]
+  name = "Youtube"
+  weight = 3
+  url = "https://youtube.com"

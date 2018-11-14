@@ -2,6 +2,9 @@
 body {
   background-color: silver; }
 
+.apps-text {
+  font-family: 'Press Start 2P', cursive; }
+
 .apps-header {
   color: black;
   font-family: 'Press Start 2P', cursive;
@@ -15,8 +18,10 @@ body {
       text-decoration: underline; }
   .apps-header hr {
     border: 0;
-    height: 1px;
-    background: white; }
+    margin-top: 1rem;
+    height: 1rem;
+    width: 50%;
+    background: black; }
   .apps-header .apps-header-title {
     font-size: 2.5rem; }
 
