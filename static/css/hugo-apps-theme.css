@@ -1,27 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 body {
-  background-color: silver; }
-
-.apps-text {
+  background-color: silver;
   font-family: 'Press Start 2P', cursive; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:visited {
+    color: black; }
+  a:hover {
+    color: red; }
+
+hr {
+  border: 0;
+  margin-top: 1rem;
+  height: 1rem;
+  width: 50%;
+  background: black; }
 
 .apps-header {
   color: black;
-  font-family: 'Press Start 2P', cursive;
   text-align: center; }
-  .apps-header a {
-    text-decoration: none;
-    color: black; }
-    .apps-header a:visited {
-      color: black; }
-    .apps-header a:hover {
-      text-decoration: underline; }
-  .apps-header hr {
-    border: 0;
-    margin-top: 1rem;
-    height: 1rem;
-    width: 50%;
-    background: black; }
   .apps-header .apps-header-title {
     font-size: 2.5rem; }
 
@@ -39,8 +38,6 @@ body {
   height: 10rem;
   padding-bottom: 0;
   overflow: hidden; }
-  .apps-app-icon a {
-    text-decoration: none; }
   .apps-app-icon img {
     width: 10rem;
     height: 10rem; }
@@ -48,12 +45,3 @@ body {
 .apps-app-name {
   text-align: center;
   padding-top: 1rem; }
-  .apps-app-name a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: 'Press Start 2P', cursive;
-    color: black; }
-    .apps-app-name a:visited {
-      color: black; }
-    .apps-app-name a:hover {
-      text-decoration: underline; }
