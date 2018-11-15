@@ -3,6 +3,12 @@
 body {
   background-color: silver;
   font-family: 'Press Start 2P', cursive;
+  line-height: 2rem;
+  /*
+  @media screen and (min-width: 40rem) {
+    background-color: blue;
+  }
+  */
 }
 
 a {
@@ -13,7 +19,6 @@ a {
   }
   &:hover {
     color: red;
-//    text-decoration: underline;
   }
 }
 
