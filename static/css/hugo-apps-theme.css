@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 2rem; /* @media screen and (min-width: 40rem) { background-color: blue; } */ }
+@media (min-width: 0px) { html { background-color: black; font-size: 10px; } }
+
+@media (min-width: 320px) { html { background-color: red; font-size: 20px; } }
+
+@media (min-width: 480px) { html { background-color: orange; font-size: 20px; } }
+
+@media (min-width: 600px) { html { background-color: yellow; font-size: 15px; } }
+
+@media (min-width: 801px) { html { background-color: green; font-size: 20px; } }
+
+@media (min-width: 1025px) { html { background-color: blue; font-size: 15px; } }
+
+@media (min-width: 1281px) { html { background-color: indigo; font-size: 10px; } }
+
+body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 2rem; text-align: center; word-wrap: break-word; }
 
 a { text-decoration: none; color: black; }
 
@@ -7,15 +21,45 @@ a:visited { color: black; }
 
 a:hover { color: red; }
 
-hr { border: 0; margin-top: 1rem; margin-bottom: 1rem; height: 1rem; width: 50%; background: black; }
+hr { border: 0; margin-top: 1rem; margin-bottom: 1rem; height: 1rem; background: black; }
 
-table { border-collapse: collapse; }
+@media (min-width: 0px) { hr { width: 100%; } }
+
+@media (min-width: 320px) { hr { width: 100%; } }
+
+@media (min-width: 480px) { hr { width: 100%; } }
+
+@media (min-width: 600px) { hr { width: 75%; } }
+
+@media (min-width: 801px) { hr { width: 75%; } }
+
+@media (min-width: 1025px) { hr { width: 50%; } }
+
+@media (min-width: 1281px) { hr { width: 50%; } }
+
+table { border-collapse: collapse; table-layout: fixed; }
 
 table, thead, tr, th, td, tfoot, fieldset, input, textarea { border: 0.2rem solid black; }
 
 thead, th { border-bottom-width: 0.4rem; }
 
-.apps-header { color: black; text-align: center; }
+.apps-content { margin: 0 auto; background-color: white; }
+
+@media (min-width: 0px) { .apps-content { width: 100%; } }
+
+@media (min-width: 320px) { .apps-content { width: 100%; } }
+
+@media (min-width: 480px) { .apps-content { width: 100%; } }
+
+@media (min-width: 600px) { .apps-content { width: 75%; } }
+
+@media (min-width: 801px) { .apps-content { width: 75%; } }
+
+@media (min-width: 1025px) { .apps-content { width: 50%; } }
+
+@media (min-width: 1281px) { .apps-content { width: 50%; } }
+
+.apps-header { color: black; }
 
 .apps-header .apps-header-title { font-size: 2.5rem; }
 
@@ -25,4 +69,4 @@ thead, th { border-bottom-width: 0.4rem; }
 
 .apps-app-icon img { width: 10rem; height: 10rem; }
 
-.apps-app-name { text-align: center; padding-top: 1rem; }
+.apps-app-name { padding-top: 1rem; }

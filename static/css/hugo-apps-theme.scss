@@ -1,14 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
+html {
+  @media (min-width:0px) {
+    background-color: black;
+    font-size: 10px;
+  }
+  @media (min-width:320px) {
+    background-color: red;
+    font-size: 20px;
+  }
+  @media (min-width:480px) {
+    background-color: orange;
+    font-size: 20px;
+  }
+  @media (min-width:600px) {
+    background-color: yellow;
+    font-size: 15px;
+  }
+  @media (min-width:801px) {
+    background-color: green;
+    font-size: 20px;
+  }
+  @media (min-width:1025px) {
+    background-color: blue;
+    font-size: 15px;
+  }
+  @media (min-width:1281px) {
+    background-color: indigo;
+    font-size: 10px;
+  }
+}
+
 body {
   background-color: silver;
   font-family: 'Press Start 2P', cursive;
   line-height: 2rem;
-  /*
-  @media screen and (min-width: 40rem) {
-    background-color: blue;
-  }
-  */
+  text-align: center;
+  word-wrap: break-word;
 }
 
 a {
@@ -27,12 +55,33 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: 1rem;
-  width: 50%;
   background: black;
+  @media (min-width:0px) {
+    width: 100%;
+  }
+  @media (min-width:320px) {
+    width: 100%;
+  }
+  @media (min-width:480px) {
+    width: 100%;
+  }
+  @media (min-width:600px) {
+    width: 75%;
+  }
+  @media (min-width:801px) {
+    width: 75%;
+  }
+  @media (min-width:1025px) {
+    width: 50%;
+  }
+  @media (min-width:1281px) {
+    width: 50%;
+  }
 }
 
 table {
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 table, thead, tr, th, td, tfoot, fieldset, input, textarea {
@@ -43,9 +92,34 @@ thead, th{
   border-bottom-width: 0.4rem;
 }
 
+.apps-content {
+  margin: 0 auto;
+  background-color: white;
+  @media (min-width:0px) {
+    width: 100%;
+  }
+  @media (min-width:320px) {
+    width: 100%;
+  }
+  @media (min-width:480px) {
+    width: 100%;
+  }
+  @media (min-width:600px) {
+    width: 75%;
+  }
+  @media (min-width:801px) {
+    width: 75%;
+  }
+  @media (min-width:1025px) {
+    width: 50%;
+  }
+  @media (min-width:1281px) {
+    width: 50%;
+  }
+} 
+
 .apps-header {
   color: black;
-  text-align: center;
   .apps-header-title {
     font-size: 2.5rem;
   }
@@ -73,6 +147,5 @@ thead, th{
 }
 
 .apps-app-name {
-  text-align: center;
   padding-top: 1rem;
 }
