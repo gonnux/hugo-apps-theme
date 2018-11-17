@@ -1,17 +1,19 @@
 {{ define "main" }}
-  {{ range .Pages }}
-    <div class="apps-app-item">
-      <div class="apps-app-icon">
-        <a href="{{ .URL }}">
-	  {{ $img := default "/img/no-image.svg" .Params.img }}
-          <img src="{{ $img }}"/>
-        </a>
+  <div class="apps-list">
+    {{ range .Pages }}
+      <div class="apps-app-item">
+        <div class="apps-app-icon">
+          <a href="{{ .URL }}">
+            {{ $img := default "/img/no-image.svg" .Params.img }}
+            <img src="{{ $img }}"/>
+          </a>
+        </div>
+        <div class="apps-app-name">
+          <a href="{{ .URL }}">
+            {{ .Title }}
+          </a>
+        </div>
       </div>
-      <div class="apps-app-name">
-        <a href="{{ .URL }}">
-          {{ .Title }}
-        </a>
-      </div>
-    </div>
-  {{ end }}
+    {{ end }}
+  </div>
 {{ end }}

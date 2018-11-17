@@ -1,17 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-@media (min-width: 0px) { html { background-color: black; font-size: 10px; } }
+@media (min-width: 0px) and (orientation: landscape) { html { background-color: black; font-size: 10px; } }
 
-@media (min-width: 320px) { html { background-color: red; font-size: 20px; } }
+@media (min-width: 320px) and (orientation: landscape) { html { background-color: red; font-size: 20px; } }
 
-@media (min-width: 480px) { html { background-color: orange; font-size: 20px; } }
+@media (min-width: 480px) and (orientation: landscape) { html { background-color: orange; font-size: 20px; } }
 
-@media (min-width: 600px) { html { background-color: yellow; font-size: 15px; } }
+@media (min-width: 600px) and (orientation: landscape) { html { background-color: yellow; font-size: 15px; } }
 
-@media (min-width: 801px) { html { background-color: green; font-size: 20px; } }
+@media (min-width: 801px) and (orientation: landscape) { html { background-color: green; font-size: 20px; } }
 
-@media (min-width: 1025px) { html { background-color: blue; font-size: 15px; } }
+@media (min-width: 1025px) and (orientation: landscape) { html { background-color: blue; font-size: 15px; } }
 
-@media (min-width: 1281px) { html { background-color: indigo; font-size: 10px; } }
+@media (min-width: 1281px) and (orientation: landscape) { html { background-color: indigo; font-size: 10px; } }
+
+@media (min-width: 0px) and (orientation: portrait) { html { background-color: black; font-size: 10px; } }
+
+@media (min-width: 320px) and (orientation: portrait) { html { background-color: red; font-size: 20px; } }
+
+@media (min-width: 480px) and (orientation: portrait) { html { background-color: orange; font-size: 20px; } }
+
+@media (min-width: 600px) and (orientation: portrait) { html { background-color: yellow; font-size: 15px; } }
+
+@media (min-width: 801px) and (orientation: portrait) { html { background-color: green; font-size: 30px; } }
+
+@media (min-width: 1025px) and (orientation: portrait) { html { background-color: blue; font-size: 15px; } }
+
+@media (min-width: 1281px) and (orientation: portrait) { html { background-color: indigo; font-size: 10px; } }
 
 body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 2rem; text-align: center; word-wrap: break-word; }
 
@@ -43,30 +57,32 @@ table, thead, tr, th, td, tfoot, fieldset, input, textarea { border: 0.2rem soli
 
 thead, th { border-bottom-width: 0.4rem; }
 
-.apps-content { margin: 0 auto; background-color: white; }
+.apps-list, .apps-content { margin: 0 auto; }
 
-@media (min-width: 0px) { .apps-content { width: 100%; } }
+@media (min-width: 0px) { .apps-list, .apps-content { width: 100%; } }
 
-@media (min-width: 320px) { .apps-content { width: 100%; } }
+@media (min-width: 320px) { .apps-list, .apps-content { width: 100%; } }
 
-@media (min-width: 480px) { .apps-content { width: 100%; } }
+@media (min-width: 480px) { .apps-list, .apps-content { width: 100%; } }
 
-@media (min-width: 600px) { .apps-content { width: 75%; } }
+@media (min-width: 600px) { .apps-list, .apps-content { width: 75%; } }
 
-@media (min-width: 801px) { .apps-content { width: 75%; } }
+@media (min-width: 801px) { .apps-list, .apps-content { width: 75%; } }
 
-@media (min-width: 1025px) { .apps-content { width: 50%; } }
+@media (min-width: 1025px) { .apps-list, .apps-content { width: 50%; } }
 
-@media (min-width: 1281px) { .apps-content { width: 50%; } }
+@media (min-width: 1281px) { .apps-list, .apps-content { width: 50%; } }
+
+.apps-content { background-color: white; }
 
 .apps-header { color: black; }
 
 .apps-header .apps-header-title { font-size: 2.5rem; }
 
-.apps-app-item { display: inline-block; width: 10rem; vertical-align: top; margin-right: 1.5rem; }
+.apps-app-item { display: inline-block; width: 8rem; vertical-align: top; margin-right: 1.5rem; }
 
-.apps-app-icon { display: inline-block; border: 0.5rem solid white; border-radius: 1.5rem; width: 10rem; height: 10rem; padding-bottom: 0; overflow: hidden; }
+.apps-app-icon { display: inline-block; border: 0.5rem solid white; border-radius: 1.5rem; width: 8rem; height: 8rem; padding-bottom: 0; overflow: hidden; }
 
-.apps-app-icon img { width: 10rem; height: 10rem; }
+.apps-app-icon img { width: 8rem; height: 8rem; }
 
 .apps-app-name { padding-top: 1rem; }

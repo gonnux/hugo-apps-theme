@@ -1,34 +1,148 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
+@mixin screen-p1 {
+  @media (min-width: 0px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin screen-p2 {
+  @media (min-width: 320px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin screen-p3 {
+  @media (min-width: 480px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin screen-p4 {
+  @media (min-width: 600px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin screen-p5 {
+  @media (min-width: 801px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin screen-p6 {
+  @media (min-width: 1025px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin screen-p7 {
+  @media (min-width:1281px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin screen-l1 {
+  @media (min-width: 0px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin screen-l2 {
+  @media (min-width: 320px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin screen-l3 {
+  @media (min-width: 480px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin screen-l4 {
+  @media (min-width: 600px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin screen-l5 {
+  @media (min-width: 801px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin screen-l6 {
+  @media (min-width: 1025px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin screen-l7 {
+  @media (min-width:1281px) and (orientation: landscape) {
+    @content;
+  }
+}
+
 html {
-  @media (min-width:0px) {
+  @include screen-l1 {
     background-color: black;
     font-size: 10px;
   }
-  @media (min-width:320px) {
+  @include screen-l2 {
     background-color: red;
     font-size: 20px;
   }
-  @media (min-width:480px) {
+  @include screen-l3 {
     background-color: orange;
     font-size: 20px;
   }
-  @media (min-width:600px) {
+  @include screen-l4 {
     background-color: yellow;
     font-size: 15px;
   }
-  @media (min-width:801px) {
+  @include screen-l5 {
     background-color: green;
     font-size: 20px;
   }
-  @media (min-width:1025px) {
+  @include screen-l6 {
     background-color: blue;
     font-size: 15px;
   }
-  @media (min-width:1281px) {
+  @include screen-l7 {
     background-color: indigo;
     font-size: 10px;
   }
+
+  @include screen-p1 {
+    background-color: black;
+    font-size: 10px;
+  }
+  @include screen-p2 {
+    background-color: red;
+    font-size: 20px;
+  }
+  @include screen-p3 {
+    background-color: orange;
+    font-size: 20px;
+  }
+  @include screen-p4 {
+    background-color: yellow;
+    font-size: 15px;
+  }
+  @include screen-p5 {
+    background-color: green;
+    font-size: 30px;
+  }
+  @include screen-p6 {
+    background-color: blue;
+    font-size: 15px;
+  }
+  @include screen-p7 {
+    background-color: indigo;
+    font-size: 10px;
+  }
+
 }
 
 body {
@@ -92,9 +206,8 @@ thead, th{
   border-bottom-width: 0.4rem;
 }
 
-.apps-content {
+.apps-list {
   margin: 0 auto;
-  background-color: white;
   @media (min-width:0px) {
     width: 100%;
   }
@@ -116,7 +229,12 @@ thead, th{
   @media (min-width:1281px) {
     width: 50%;
   }
-} 
+}
+
+.apps-content {
+  @extend .apps-list;
+  background-color: white;
+}
 
 .apps-header {
   color: black;
@@ -127,7 +245,7 @@ thead, th{
 
 .apps-app-item {
   display: inline-block;
-  width: 10rem;
+  width: 8rem;
   vertical-align: top;
   margin-right: 1.5rem;
 }
@@ -136,13 +254,13 @@ thead, th{
   display: inline-block;
   border: 0.5rem solid white;
   border-radius: 1.5rem;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   padding-bottom: 0;
   overflow: hidden;
   img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
   }
 }
 
