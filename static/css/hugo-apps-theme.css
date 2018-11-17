@@ -1,53 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-body {
-  background-color: silver;
-  font-family: 'Press Start 2P', cursive;
-  line-height: 2rem;
-  /*
-  @media screen and (min-width: 40rem) {
-    background-color: blue;
-  }
-  */ }
+body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 2rem; /* @media screen and (min-width: 40rem) { background-color: blue; } */ }
 
-a {
-  text-decoration: none;
-  color: black; }
-  a:visited {
-    color: black; }
-  a:hover {
-    color: red; }
+a { text-decoration: none; color: black; }
 
-hr {
-  border: 0;
-  margin-top: 1rem;
-  height: 1rem;
-  width: 50%;
-  background: black; }
+a:visited { color: black; }
 
-.apps-header {
-  color: black;
-  text-align: center; }
-  .apps-header .apps-header-title {
-    font-size: 2.5rem; }
+a:hover { color: red; }
 
-.apps-app-item {
-  display: inline-block;
-  width: 10rem;
-  vertical-align: top;
-  margin-right: 1.5rem; }
+hr { border: 0; margin-top: 1rem; margin-bottom: 1rem; height: 1rem; width: 50%; background: black; }
 
-.apps-app-icon {
-  display: inline-block;
-  border: 0.5rem solid white;
-  border-radius: 1.5rem;
-  width: 10rem;
-  height: 10rem;
-  padding-bottom: 0;
-  overflow: hidden; }
-  .apps-app-icon img {
-    width: 10rem;
-    height: 10rem; }
+table { border-collapse: collapse; }
 
-.apps-app-name {
-  text-align: center;
-  padding-top: 1rem; }
+table, thead, tr, th, td, tfoot, fieldset, input, textarea { border: 0.2rem solid black; }
+
+thead, th { border-bottom-width: 0.4rem; }
+
+.apps-header { color: black; text-align: center; }
+
+.apps-header .apps-header-title { font-size: 2.5rem; }
+
+.apps-app-item { display: inline-block; width: 10rem; vertical-align: top; margin-right: 1.5rem; }
+
+.apps-app-icon { display: inline-block; border: 0.5rem solid white; border-radius: 1.5rem; width: 10rem; height: 10rem; padding-bottom: 0; overflow: hidden; }
+
+.apps-app-icon img { width: 10rem; height: 10rem; }
+
+.apps-app-name { text-align: center; padding-top: 1rem; }

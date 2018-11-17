@@ -25,9 +25,22 @@ a {
 hr {
   border: 0;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   height: 1rem;
   width: 50%;
   background: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, thead, tr, th, td, tfoot, fieldset, input, textarea {
+  border: 0.2rem solid black
+}
+
+thead, th{
+  border-bottom-width: 0.4rem;
 }
 
 .apps-header {
