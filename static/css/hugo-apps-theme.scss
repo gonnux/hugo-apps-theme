@@ -79,7 +79,7 @@ html {
   }
   @include screen(p, 5) {
     background-color: green;
-    font-size: 30px;
+    font-size: 15px;
   }
   @include screen(p, 6) {
     background-color: blue;
@@ -94,10 +94,42 @@ html {
 body {
   background-color: silver;
   font-family: 'Press Start 2P', cursive;
-  line-height: 2rem;
+  line-height: 120%;
   text-align: center;
   word-wrap: break-word;
   overflow: scroll;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1.12rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 110%;
+}
+
+p {
+  font-size: 1rem;
 }
 
 a {
@@ -112,14 +144,17 @@ a {
 }
 
 .readability {
-  @include screen(lp, 1) {
+  @include screen(l, 1) {
     width: 100%;
   }
-  @include screen(lp, 4) {
+  @include screen(l, 4) {
     width: 75%;
   }
-  @include screen(lp, 6) {
+  @include screen(l, 6) {
     width: 50%;
+  }
+  @include screen(p, 1) {
+    width: 100%;
   }
 }
 

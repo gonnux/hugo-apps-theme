@@ -21,13 +21,29 @@
 
 @media (min-width: 600px) and (orientation: portrait) { html { background-color: yellow; font-size: 15px; } }
 
-@media (min-width: 801px) and (orientation: portrait) { html { background-color: green; font-size: 30px; } }
+@media (min-width: 801px) and (orientation: portrait) { html { background-color: green; font-size: 15px; } }
 
 @media (min-width: 1025px) and (orientation: portrait) { html { background-color: blue; font-size: 15px; } }
 
 @media (min-width: 1281px) and (orientation: portrait) { html { background-color: indigo; font-size: 10px; } }
 
-body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 2rem; text-align: center; word-wrap: break-word; overflow: scroll; }
+body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 120%; text-align: center; word-wrap: break-word; overflow: scroll; }
+
+h1 { font-size: 2rem; }
+
+h2 { font-size: 1.5rem; }
+
+h3 { font-size: 1.17rem; }
+
+h4 { font-size: 1.12rem; }
+
+h5 { font-size: 0.83rem; }
+
+h6 { font-size: 0.75rem; }
+
+h1, h2, h3, h4, h5, h6 { line-height: 110%; }
+
+p { font-size: 1rem; }
 
 a { text-decoration: none; color: black; }
 
@@ -35,11 +51,13 @@ a:visited { color: black; }
 
 a:hover { color: red; }
 
-@media (min-width: 0px) { .readability, hr, .apps-list, .apps-content { width: 100%; } }
+@media (min-width: 0px) and (orientation: landscape) { .readability, hr, .apps-list, .apps-content { width: 100%; } }
 
-@media (min-width: 600px) { .readability, hr, .apps-list, .apps-content { width: 75%; } }
+@media (min-width: 600px) and (orientation: landscape) { .readability, hr, .apps-list, .apps-content { width: 75%; } }
 
-@media (min-width: 1025px) { .readability, hr, .apps-list, .apps-content { width: 50%; } }
+@media (min-width: 1025px) and (orientation: landscape) { .readability, hr, .apps-list, .apps-content { width: 50%; } }
+
+@media (min-width: 0px) and (orientation: portrait) { .readability, hr, .apps-list, .apps-content { width: 100%; } }
 
 hr { border: 0; margin-top: 1rem; margin-bottom: 1rem; height: 1rem; background: black; }
 

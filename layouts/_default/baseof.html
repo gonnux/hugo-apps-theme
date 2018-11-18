@@ -5,20 +5,25 @@
 <html>
 <head>
   <link rel="stylesheet" href="/css/hugo-apps-theme.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
   <header class="apps-header">
     <div style="margin-bottom:1rem">
       <a href="../" style="float: left">Back</a>
       <a href="{{ .Site.BaseURL }}" class="apps-header-title">
+	<h1>
         {{ .Site.Title }}
+	</h1>
       </a>
     </div>
     {{ with .Site.Menus.main }}
       {{ range $i, $e := sort . }}
-      <a href="{{ $e.URL }}" style="margin:0;{{ if $i }}padding-left: 1rem; border-left: 0.2rem solid black{{ end }}">
+      <h2 style="display: inline-block;margin:0;{{ if $i }}padding-left: 1rem; border-left: 0.2rem solid black{{ end }}">
+      <a href="{{ $e.URL }}">
         {{- $e.Name -}}
       </a>
+      </h2>
       {{ end }}
     {{ end }}
     <hr/>
