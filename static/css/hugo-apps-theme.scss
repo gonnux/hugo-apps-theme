@@ -16,13 +16,19 @@
   } @else if $width == 7 {
     $width: 1281px;
   }
-  @if $orientation == p {
-    $orientation: portrait;
-  } @else if $orientation == l {
-    $orientation: landscape;
-  }
-  @media (min-width: $width) and (orientation: $orientation) {
-    @content;
+  @if $orientation == lp {
+    @media (min-width: $width) {
+      @content;
+    }
+  } @else {
+    @if $orientation == p {
+      $orientation: portrait;
+    } @else if $orientation == l {
+      $orientation: landscape;
+    }
+    @media (min-width: $width) and (orientation: $orientation) {
+      @content;
+    }
   }
 }
 
@@ -33,7 +39,7 @@ html {
   }
   @include screen(l, 2) {
     background-color: red;
-    font-size: 20px;
+    font-size: 15px;
   }
   @include screen(l, 3) {
     background-color: orange;
@@ -61,7 +67,7 @@ html {
   }
   @include screen(p, 2) {
     background-color: red;
-    font-size: 20px;
+    font-size: 15px;
   }
   @include screen(p, 3) {
     background-color: orange;
@@ -91,6 +97,7 @@ body {
   line-height: 2rem;
   text-align: center;
   word-wrap: break-word;
+  overflow: scroll;
 }
 
 a {
@@ -104,33 +111,25 @@ a {
   }
 }
 
+.readability {
+  @include screen(lp, 1) {
+    width: 100%;
+  }
+  @include screen(lp, 4) {
+    width: 75%;
+  }
+  @include screen(lp, 6) {
+    width: 50%;
+  }
+}
+
 hr {
+  @extend .readability;
   border: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: 1rem;
   background: black;
-  @media (min-width:0px) {
-    width: 100%;
-  }
-  @media (min-width:320px) {
-    width: 100%;
-  }
-  @media (min-width:480px) {
-    width: 100%;
-  }
-  @media (min-width:600px) {
-    width: 75%;
-  }
-  @media (min-width:801px) {
-    width: 75%;
-  }
-  @media (min-width:1025px) {
-    width: 50%;
-  }
-  @media (min-width:1281px) {
-    width: 50%;
-  }
 }
 
 table {
@@ -147,28 +146,8 @@ thead, th{
 }
 
 .apps-list {
+  @extend .readability;
   margin: 0 auto;
-  @media (min-width:0px) {
-    width: 100%;
-  }
-  @media (min-width:320px) {
-    width: 100%;
-  }
-  @media (min-width:480px) {
-    width: 100%;
-  }
-  @media (min-width:600px) {
-    width: 75%;
-  }
-  @media (min-width:801px) {
-    width: 75%;
-  }
-  @media (min-width:1025px) {
-    width: 50%;
-  }
-  @media (min-width:1281px) {
-    width: 50%;
-  }
 }
 
 .apps-content {

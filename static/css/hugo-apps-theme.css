@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 @media (min-width: 0px) and (orientation: landscape) { html { background-color: black; font-size: 10px; } }
 
-@media (min-width: 320px) and (orientation: landscape) { html { background-color: red; font-size: 20px; } }
+@media (min-width: 320px) and (orientation: landscape) { html { background-color: red; font-size: 15px; } }
 
 @media (min-width: 480px) and (orientation: landscape) { html { background-color: orange; font-size: 20px; } }
 
@@ -15,7 +15,7 @@
 
 @media (min-width: 0px) and (orientation: portrait) { html { background-color: black; font-size: 10px; } }
 
-@media (min-width: 320px) and (orientation: portrait) { html { background-color: red; font-size: 20px; } }
+@media (min-width: 320px) and (orientation: portrait) { html { background-color: red; font-size: 15px; } }
 
 @media (min-width: 480px) and (orientation: portrait) { html { background-color: orange; font-size: 20px; } }
 
@@ -27,7 +27,7 @@
 
 @media (min-width: 1281px) and (orientation: portrait) { html { background-color: indigo; font-size: 10px; } }
 
-body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 2rem; text-align: center; word-wrap: break-word; }
+body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 2rem; text-align: center; word-wrap: break-word; overflow: scroll; }
 
 a { text-decoration: none; color: black; }
 
@@ -35,21 +35,13 @@ a:visited { color: black; }
 
 a:hover { color: red; }
 
+@media (min-width: 0px) { .readability, hr, .apps-list, .apps-content { width: 100%; } }
+
+@media (min-width: 600px) { .readability, hr, .apps-list, .apps-content { width: 75%; } }
+
+@media (min-width: 1025px) { .readability, hr, .apps-list, .apps-content { width: 50%; } }
+
 hr { border: 0; margin-top: 1rem; margin-bottom: 1rem; height: 1rem; background: black; }
-
-@media (min-width: 0px) { hr { width: 100%; } }
-
-@media (min-width: 320px) { hr { width: 100%; } }
-
-@media (min-width: 480px) { hr { width: 100%; } }
-
-@media (min-width: 600px) { hr { width: 75%; } }
-
-@media (min-width: 801px) { hr { width: 75%; } }
-
-@media (min-width: 1025px) { hr { width: 50%; } }
-
-@media (min-width: 1281px) { hr { width: 50%; } }
 
 table { border-collapse: collapse; table-layout: fixed; }
 
@@ -58,20 +50,6 @@ table, thead, tr, th, td, tfoot, fieldset, input, textarea { border: 0.2rem soli
 thead, th { border-bottom-width: 0.4rem; }
 
 .apps-list, .apps-content { margin: 0 auto; }
-
-@media (min-width: 0px) { .apps-list, .apps-content { width: 100%; } }
-
-@media (min-width: 320px) { .apps-list, .apps-content { width: 100%; } }
-
-@media (min-width: 480px) { .apps-list, .apps-content { width: 100%; } }
-
-@media (min-width: 600px) { .apps-list, .apps-content { width: 75%; } }
-
-@media (min-width: 801px) { .apps-list, .apps-content { width: 75%; } }
-
-@media (min-width: 1025px) { .apps-list, .apps-content { width: 50%; } }
-
-@media (min-width: 1281px) { .apps-list, .apps-content { width: 50%; } }
 
 .apps-content { background-color: lightgray; }
 
