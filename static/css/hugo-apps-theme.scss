@@ -43,7 +43,7 @@ html {
   }
   @include screen(l, 3) {
     background-color: orange;
-    font-size: 20px;
+    font-size: 15px;
   }
   @include screen(l, 4) {
     background-color: yellow;
@@ -51,7 +51,7 @@ html {
   }
   @include screen(l, 5) {
     background-color: green;
-    font-size: 20px;
+    font-size: 15px;
   }
   @include screen(l, 6) {
     background-color: blue;
@@ -59,7 +59,7 @@ html {
   }
   @include screen(l, 7) {
     background-color: indigo;
-    font-size: 10px;
+    font-size: 20px;
   }
   @include screen(p, 1) {
     background-color: black;
@@ -71,7 +71,7 @@ html {
   }
   @include screen(p, 3) {
     background-color: orange;
-    font-size: 20px;
+    font-size: 15px;
   }
   @include screen(p, 4) {
     background-color: yellow;
@@ -79,15 +79,15 @@ html {
   }
   @include screen(p, 5) {
     background-color: green;
-    font-size: 15px;
+    font-size: 20px;
   }
   @include screen(p, 6) {
     background-color: blue;
-    font-size: 15px;
+    font-size: 20px;
   }
   @include screen(p, 7) {
     background-color: indigo;
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 
@@ -176,7 +176,7 @@ table, thead, tr, th, td, tfoot, fieldset, input, textarea {
   border: 0.2rem solid black
 }
 
-thead, th{
+thead, th {
   border-bottom-width: 0.4rem;
 }
 

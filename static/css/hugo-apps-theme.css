@@ -3,29 +3,29 @@
 
 @media (min-width: 320px) and (orientation: landscape) { html { background-color: red; font-size: 15px; } }
 
-@media (min-width: 480px) and (orientation: landscape) { html { background-color: orange; font-size: 20px; } }
+@media (min-width: 480px) and (orientation: landscape) { html { background-color: orange; font-size: 15px; } }
 
 @media (min-width: 600px) and (orientation: landscape) { html { background-color: yellow; font-size: 15px; } }
 
-@media (min-width: 801px) and (orientation: landscape) { html { background-color: green; font-size: 20px; } }
+@media (min-width: 801px) and (orientation: landscape) { html { background-color: green; font-size: 15px; } }
 
 @media (min-width: 1025px) and (orientation: landscape) { html { background-color: blue; font-size: 15px; } }
 
-@media (min-width: 1281px) and (orientation: landscape) { html { background-color: indigo; font-size: 10px; } }
+@media (min-width: 1281px) and (orientation: landscape) { html { background-color: indigo; font-size: 20px; } }
 
 @media (min-width: 0px) and (orientation: portrait) { html { background-color: black; font-size: 10px; } }
 
 @media (min-width: 320px) and (orientation: portrait) { html { background-color: red; font-size: 15px; } }
 
-@media (min-width: 480px) and (orientation: portrait) { html { background-color: orange; font-size: 20px; } }
+@media (min-width: 480px) and (orientation: portrait) { html { background-color: orange; font-size: 15px; } }
 
 @media (min-width: 600px) and (orientation: portrait) { html { background-color: yellow; font-size: 15px; } }
 
-@media (min-width: 801px) and (orientation: portrait) { html { background-color: green; font-size: 15px; } }
+@media (min-width: 801px) and (orientation: portrait) { html { background-color: green; font-size: 20px; } }
 
-@media (min-width: 1025px) and (orientation: portrait) { html { background-color: blue; font-size: 15px; } }
+@media (min-width: 1025px) and (orientation: portrait) { html { background-color: blue; font-size: 20px; } }
 
-@media (min-width: 1281px) and (orientation: portrait) { html { background-color: indigo; font-size: 10px; } }
+@media (min-width: 1281px) and (orientation: portrait) { html { background-color: indigo; font-size: 20px; } }
 
 body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 120%; text-align: center; word-wrap: break-word; overflow: scroll; }
 
