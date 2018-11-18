@@ -73,7 +73,7 @@ thead, th { border-bottom-width: 0.4rem; }
 
 @media (min-width: 1281px) { .apps-list, .apps-content { width: 50%; } }
 
-.apps-content { background-color: white; }
+.apps-content { background-color: lightgray; }
 
 .apps-header { color: black; }
 
