@@ -104,27 +104,40 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3.6rem;
+  margin-top: 0.72rem;
+  margin-bottom: 0.72rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 h3 {
-  font-size: 1.17rem;
+  font-size: 2.4rem;
+  margin-top: 0.48rem;
+  margin-bottom: 0.48rem;
+
 }
 
 h4 {
-  font-size: 1.12rem;
+  font-size: 1.8rem;
+  margin-top: 0.36rem;
+  margin-bottom: 0.36rem;
 }
 
 h5 {
-  font-size: 0.83rem;
+  font-size: 1.4rem;
+  margin-top: 0.28rem;
+  margin-bottom: 0.28rem;
 }
 
 h6 {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
+  margin-top: 0.24rem;
+  margin-bottom: 0.24rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -176,11 +189,11 @@ table {
 }
 
 table, thead, tr, th, td, tfoot, fieldset, input, textarea {
-  border: 0.2rem solid black
+  border: 0.1rem solid black
 }
 
 thead, th {
-  border-bottom-width: 0.4rem;
+  border-bottom-width: 0.2rem;
 }
 
 .apps-list {
@@ -205,6 +218,7 @@ thead, th {
   width: 8rem;
   vertical-align: top;
   margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .apps-app-icon {

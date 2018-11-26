@@ -20,7 +20,7 @@
     </div>
     {{ with .Site.Menus.main }}
       {{ range $i, $e := sort . }}
-      <h2 style="display: inline-block;margin:0;{{ if $i }}padding-left: 1rem; border-left: 0.2rem solid black{{ end }}">
+      <h4 style="display: inline-block;margin:0;{{ if $i }}padding-left:1rem;margin-left: 0.8rem; border-left: 0.2rem solid black{{ end }}">
       <a href="{{ $e.URL }}">
         {{- $e.Name -}}
       </a>

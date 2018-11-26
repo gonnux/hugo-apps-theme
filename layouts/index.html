@@ -1,11 +1,11 @@
 {{ define "main" }}
   <div style="margin-top: 2rem; margin-bottom: 2rem">
     <img src="{{ .Site.Params.profile_img }}" style="width: 10rem; height: 10rem"/>
-    <h1>{{ .Site.Params.author }}</h1>
+    <h1 style="">{{ .Site.Params.author }}</h1>
   </div>
   {{ with .Site.Params.social }}
     {{ range sort . }}
-      <a href="{{ .url }}">{{ .name }}</a>
+    <a href="{{ .url }}"><h5 style="display:inline">{{ .name }}</h5></a>
     {{ end }}
   {{ end }}
 {{ end }}
