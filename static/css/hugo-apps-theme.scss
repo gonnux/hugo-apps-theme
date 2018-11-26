@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+//@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+//@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 
 @mixin screen($orientation, $width) {
   @if $width == 1 {
@@ -93,7 +96,7 @@ html {
 
 body {
   background-color: silver;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Rajdhani', cursive;
   line-height: 120%;
   text-align: center;
   word-wrap: break-word;
@@ -219,5 +222,5 @@ thead, th {
 }
 
 .apps-app-name {
-  padding-top: 1rem;
+//  padding-top: 1rem;
 }

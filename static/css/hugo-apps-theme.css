@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani");
 @media (min-width: 0px) and (orientation: landscape) { html { background-color: black; font-size: 10px; } }
 
 @media (min-width: 320px) and (orientation: landscape) { html { background-color: red; font-size: 15px; } }
@@ -27,7 +27,7 @@
 
 @media (min-width: 1281px) and (orientation: portrait) { html { background-color: indigo; font-size: 20px; } }
 
-body { background-color: silver; font-family: 'Press Start 2P', cursive; line-height: 120%; text-align: center; word-wrap: break-word; overflow: scroll; }
+body { background-color: silver; font-family: 'Rajdhani', cursive; line-height: 120%; text-align: center; word-wrap: break-word; overflow: scroll; }
 
 h1 { font-size: 2rem; }
 
@@ -80,5 +80,3 @@ thead, th { border-bottom-width: 0.4rem; }
 .apps-app-icon { display: inline-block; border: 0.5rem solid white; border-radius: 1.5rem; width: 8rem; height: 8rem; padding-bottom: 0; overflow: hidden; }
 
 .apps-app-icon img { width: 8rem; height: 8rem; }
-
-.apps-app-name { padding-top: 1rem; }
