@@ -6,7 +6,12 @@
   </div>
   {{ with .Site.Params.social }}
     {{ range $i, $e := sort . }}
-      <a href="{{ .url }}"><h5 style="display:inline;{{ if $i }}padding-left:0.5rem;margin-left: 0.3rem; border-left: 0.2rem solid black{{ end }}">{{ $e.name }}</h5></a>
+      <a class="apps-submenu-item" href="{{ .url }}">
+        <!--<h5 style="{{ if $i }}padding-left:0.5rem;margin-left: 0.3rem; border-left: 0.2rem solid black{{ end }}">{{ $e.name }}</h5>-->
+        <h5>
+          {{- $e.name -}}
+        </h5>
+      </a>
     {{ end }}
   {{ end }}
 {{ end }}

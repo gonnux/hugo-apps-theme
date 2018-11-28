@@ -252,3 +252,37 @@ thead, th {
 .apps-app-name {
 //  padding-top: 1rem;
 }
+
+.apps-menu {
+}
+
+.apps-menu-item {
+  @include screen(l, 1) {
+    display: block;
+  }
+  @include screen(l, 4) {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @include screen(p, 1) {
+    display: block;
+  }
+}
+
+.apps-submenu {
+}
+
+.apps-submenu-item {
+  @include screen(l, 1) {
+    display: block;
+  }
+  @include screen(l, 4) {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  @include screen(p, 1) {
+    display: block;
+  }
+}

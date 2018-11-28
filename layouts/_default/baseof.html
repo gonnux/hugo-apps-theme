@@ -23,11 +23,12 @@
     </div>
     {{ with .Site.Menus.main }}
       {{ range $i, $e := sort . }}
-      <h4 style="display: inline-block;margin:0;{{ if $i }}padding-left:1rem;margin-left: 0.8rem; border-left: 0.2rem solid black{{ end }}">
-      <a href="{{ $e.URL }}">
-        {{- $e.Name -}}
+      <a class="apps-menu-item" href="{{ $e.URL }}">
+<!--        <h4 style="margin:0;{{ if $i }}padding-left:1rem;margin-left: 0.8rem; border-left: 0.2rem solid black{{ end }}">-->
+        <h4>
+          {{- $e.Name -}}
+        </h4>
       </a>
-      </h2>
       {{ end }}
     {{ end }}
     <hr/>
