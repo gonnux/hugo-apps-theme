@@ -1,7 +1,7 @@
 ---
-title: "lorem-ipsum"
+title: "full-page"
 date: 2018-11-28T15:01:36-05:00
-draft: true
+full: true
 ---
 
 <h1>Lorem ipsum dolor sit amet consectetuer adipiscing 
