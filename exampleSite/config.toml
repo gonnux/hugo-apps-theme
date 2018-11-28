@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Hugo Apps Theme"
 paginate = 10
+disqusShortname = ""
 
 [params]
   profile_img = "https://openclipart.org/download/103855/tux.svg"
