@@ -1,12 +1,14 @@
 baseURL = "/"
-languageCode = "en-us"
-title = "Hugo Apps Theme"
 paginate = 10
+languageCode = "en-us"
 disqusShortname = ""
+googleAnalytics = ""
+title = "Hugo Apps Theme"
+author = "gonapps"
+copyright = ""
 
 [params]
-  profile_img = "https://openclipart.org/download/103855/tux.svg"
-  author = "gonapps"
+  logo = "https://openclipart.org/download/103855/tux.svg"
 
 [[menu.main]]
   name = "About"
