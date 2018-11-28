@@ -1,5 +1,16 @@
 {{ define "main" }}
   <div class="apps-content">
-    {{ .Content }}
+    {{- .Content -}}
+    {{- if not (eq .Site.DisqusShortname "") -}}
+      {{- if isset .Params "enable_disqus" -}}
+        {{- if eq .Params.enable_disqus true -}}
+          {{- template "_internal/disqus.html" . -}}
+        {{- end -}}
+      {{- else -}}
+        {{- if not .Params.full -}}
+          {{- template "_internal/disqus.html" . -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
   </div>
 {{ end }}
