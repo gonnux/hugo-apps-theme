@@ -36,6 +36,7 @@
 }
 
 html {
+/*
   @include screen(l, 1) {
     background-color: black;
     font-size: 10px;
@@ -92,6 +93,7 @@ html {
     background-color: indigo;
     font-size: 20px;
   }
+*/
 }
 
 body {
@@ -209,6 +211,10 @@ thead, th {
   @extend .apps-list;
   background-color: lightgray;
   text-align: left;
+  overflow: scroll;
+  > * {
+    margin: 1rem 2rem 1rem 2rem;
+  }
 }
 
 .apps-header {

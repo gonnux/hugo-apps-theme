@@ -1,31 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani");
-@media (min-width: 0px) and (orientation: landscape) { html { background-color: black; font-size: 10px; } }
-
-@media (min-width: 320px) and (orientation: landscape) { html { background-color: red; font-size: 15px; } }
-
-@media (min-width: 480px) and (orientation: landscape) { html { background-color: orange; font-size: 15px; } }
-
-@media (min-width: 600px) and (orientation: landscape) { html { background-color: yellow; font-size: 15px; } }
-
-@media (min-width: 801px) and (orientation: landscape) { html { background-color: green; font-size: 15px; } }
-
-@media (min-width: 1025px) and (orientation: landscape) { html { background-color: blue; font-size: 15px; } }
-
-@media (min-width: 1281px) and (orientation: landscape) { html { background-color: indigo; font-size: 20px; } }
-
-@media (min-width: 0px) and (orientation: portrait) { html { background-color: black; font-size: 10px; } }
-
-@media (min-width: 320px) and (orientation: portrait) { html { background-color: red; font-size: 15px; } }
-
-@media (min-width: 480px) and (orientation: portrait) { html { background-color: orange; font-size: 15px; } }
-
-@media (min-width: 600px) and (orientation: portrait) { html { background-color: yellow; font-size: 15px; } }
-
-@media (min-width: 801px) and (orientation: portrait) { html { background-color: green; font-size: 20px; } }
-
-@media (min-width: 1025px) and (orientation: portrait) { html { background-color: blue; font-size: 20px; } }
-
-@media (min-width: 1281px) and (orientation: portrait) { html { background-color: indigo; font-size: 20px; } }
+html { /* @include screen(l, 1) { background-color: black; font-size: 10px; } @include screen(l, 2) { background-color: red; font-size: 15px; } @include screen(l, 3) { background-color: orange; font-size: 15px; } @include screen(l, 4) { background-color: yellow; font-size: 15px; } @include screen(l, 5) { background-color: green; font-size: 15px; } @include screen(l, 6) { background-color: blue; font-size: 15px; } @include screen(l, 7) { background-color: indigo; font-size: 20px; } @include screen(p, 1) { background-color: black; font-size: 10px; } @include screen(p, 2) { background-color: red; font-size: 15px; } @include screen(p, 3) { background-color: orange; font-size: 15px; } @include screen(p, 4) { background-color: yellow; font-size: 15px; } @include screen(p, 5) { background-color: green; font-size: 20px; } @include screen(p, 6) { background-color: blue; font-size: 20px; } @include screen(p, 7) { background-color: indigo; font-size: 20px; } */ }
 
 body { background-color: silver; font-family: 'Rajdhani', cursive; line-height: 120%; word-wrap: break-word; overflow: scroll; text-align: center; }
 
@@ -71,7 +45,9 @@ thead, th { border-bottom-width: 0.2rem; }
 
 .apps-list, .apps-content { margin: 0 auto; }
 
-.apps-content { background-color: lightgray; text-align: left; }
+.apps-content { background-color: lightgray; text-align: left; overflow: scroll; }
+
+.apps-content > * { margin: 1rem 2rem 1rem 2rem; }
 
 .apps-header { color: black; }
 
