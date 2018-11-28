@@ -98,9 +98,9 @@ body {
   background-color: silver;
   font-family: 'Rajdhani', cursive;
   line-height: 120%;
-  text-align: center;
   word-wrap: break-word;
   overflow: scroll;
+  text-align: center;
 }
 
 h1 {
@@ -146,6 +146,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 1rem;
+}
+
+pre {
+  overflow: auto;
 }
 
 a {
@@ -204,6 +208,7 @@ thead, th {
 .apps-content {
   @extend .apps-list;
   background-color: lightgray;
+  text-align: left;
 }
 
 .apps-header {

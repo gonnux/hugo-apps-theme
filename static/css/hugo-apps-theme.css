@@ -27,7 +27,7 @@
 
 @media (min-width: 1281px) and (orientation: portrait) { html { background-color: indigo; font-size: 20px; } }
 
-body { background-color: silver; font-family: 'Rajdhani', cursive; line-height: 120%; text-align: center; word-wrap: break-word; overflow: scroll; }
+body { background-color: silver; font-family: 'Rajdhani', cursive; line-height: 120%; word-wrap: break-word; overflow: scroll; text-align: center; }
 
 h1 { font-size: 3.6rem; margin-top: 0.72rem; margin-bottom: 0.72rem; }
 
@@ -44,6 +44,8 @@ h6 { font-size: 1.2rem; margin-top: 0.24rem; margin-bottom: 0.24rem; }
 h1, h2, h3, h4, h5, h6 { line-height: 110%; }
 
 p { font-size: 1rem; }
+
+pre { overflow: auto; }
 
 a { text-decoration: none; color: black; }
 
@@ -69,7 +71,7 @@ thead, th { border-bottom-width: 0.2rem; }
 
 .apps-list, .apps-content { margin: 0 auto; }
 
-.apps-content { background-color: lightgray; }
+.apps-content { background-color: lightgray; text-align: left; }
 
 .apps-header { color: black; }
 
