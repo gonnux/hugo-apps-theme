@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/gonapps/hugo-apps-theme/LICENSE"
 description = ""
 homepage = "http://gonapps.com"
-tags = []
+tags = ["minimal", "highlight.js", "customizable", "projects", "portfolio", "google analytics", "syntax highlighting", "light"]
 features = []
 min_version = "0.41"
 
