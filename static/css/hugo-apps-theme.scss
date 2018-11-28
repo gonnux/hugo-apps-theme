@@ -211,7 +211,7 @@ thead, th {
   @extend .apps-list;
   background-color: lightgray;
   text-align: left;
-  overflow: scroll;
+  overflow: auto;
   > * {
     margin: 1rem 2rem 1rem 2rem;
   }
