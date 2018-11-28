@@ -3,28 +3,35 @@ paginate = 10
 languageCode = "en-us"
 disqusShortname = ""
 googleAnalytics = ""
-title = "Hugo Apps Theme"
-author = "gonapps"
+title = "Your site title"
 copyright = ""
 
 [params]
   logo = "https://openclipart.org/download/103855/tux.svg"
+  author = "Your name"
+  info = "Any info about you"
+
 
 [[menu.main]]
-  name = "About"
+  name = "Github"
   weight = 1
-  url = "/about"
+  url = "https://github.com/gonapps"
 
 [[menu.main]]
-  name = "Blog"
+  name = "Website"
   weight = 2
-  url = "/blog"
-
+  url = "https://gonapps.com"
 
 [[menu.main]]
-  name = "Apps"
+  name = "*Apps*"
   weight = 3
   url = "/apps"
+
+[[menu.main]]
+  name = "README"
+  weight = 3
+  url = "/README"
+
 
 [[params.social]]
   name = "Github"
@@ -37,6 +44,6 @@ copyright = ""
   url = "https://gitlab.com/gonapps"
 
 [[params.social]]
-  name = "Youtube"
+  name = "Website"
   weight = 3
-  url = "https://youtube.com"
+  url = "https://gonapps.com"
