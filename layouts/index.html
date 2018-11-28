@@ -1,12 +1,12 @@
 {{ define "main" }}
   <div style="margin-top: 2rem; margin-bottom: 2rem">
-    <img src="{{ .Site.Params.logo }}" style="width: 10rem; height: 10rem"/>
-    <h1 style="">{{ .Site.Params.author }}</h1>
-    <h3 style="">{{ .Site.Params.info }}</h3>
+    <img src="{{ .Site.Params.logo }}" style="width: 15rem; height: 15rem"/>
+    <h2 style="">{{ .Site.Params.author }}</h1>
+    <h4 style="">{{ .Site.Params.info }}</h3>
   </div>
   {{ with .Site.Params.social }}
-    {{ range sort . }}
-      <a href="{{ .url }}"><h5 style="display:inline">{{ .name }}</h5></a>
+    {{ range $i, $e := sort . }}
+      <a href="{{ .url }}"><h5 style="display:inline;{{ if $i }}padding-left:0.5rem;margin-left: 0.3rem; border-left: 0.2rem solid black{{ end }}">{{ $e.name }}</h5></a>
     {{ end }}
   {{ end }}
 {{ end }}
