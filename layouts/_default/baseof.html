@@ -35,6 +35,9 @@
     {{- block "main" . }}{{- end }}
   </div>
   <script>hljs.initHighlightingOnLoad();</script>
+  {{- if not (eq .Site.GoogleAnalytics "") -}}
+    {{ template "_internal/google_analytics_async.html" . }}
+  {{- end -}}
 </body>
 </html>
 
