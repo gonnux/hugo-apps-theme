@@ -4,7 +4,7 @@
       <div class="apps-app-item">
         <div class="apps-app-icon">
           <a href="{{ .URL }}">
-            {{ $img := default "/img/no-image.svg" .Params.img }}
+            {{ $img := absURL (default "/img/no-image.svg" .Params.img) }}
             <img src="{{ $img }}"/>
           </a>
         </div>
