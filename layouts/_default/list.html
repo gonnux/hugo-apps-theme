@@ -4,8 +4,11 @@
       <div class="apps-app-item">
         <div class="apps-app-icon">
           <a href="{{ .URL }}">
-            {{ $img := absURL (default "/img/no-image.svg" .Params.img) }}
-            <img src="{{ $img }}"/>
+            {{ if or (not (isset .Params "img")) (eq .Params.img "") }}
+	      <img src="{{ .Site.BaseURL }}/img/no-image.svg"/>
+	    {{ else }}
+	      <img src="{{ .Params.img }}"/>
+	    {{ end }}
           </a>
         </div>
         <div class="apps-app-name">
