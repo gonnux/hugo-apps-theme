@@ -1,6 +1,3 @@
----
-enableDisqus: true
----
 # Hugo Apps Theme
 [![GitHub stars](https://img.shields.io/github/stars/gonapps/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonapps/hugo-apps-theme/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/gonapps/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonapps/hugo-apps-theme/fork)
