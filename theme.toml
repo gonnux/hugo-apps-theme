@@ -4,7 +4,7 @@
 name = "hugo-apps-theme"
 license = "MIT"
 licenselink = "https://github.com/gonapps/hugo-apps-theme/LICENSE.md"
-description = "Hugo Apps Theme"
+description = "This theme makes it easy to upload your webapps"
 homepage = "http://gonapps.com"
 tags = ["minimal", "highlight.js", "customizable", "projects", "portfolio", "google analytics", "syntax highlighting", "light"]
 features = []
