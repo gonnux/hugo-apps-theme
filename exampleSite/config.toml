@@ -1,6 +1,6 @@
 baseURL = "/"
-paginate = 10
 languageCode = "en-us"
+hasCJKLanguage = true
 disqusShortname = ""
 googleAnalytics = ""
 title = "Your site title"
@@ -10,7 +10,6 @@ copyright = ""
   logo = "https://openclipart.org/download/103855/tux.svg"
   author = "Your name"
   info = "Any info about you"
-
 
 [[menu.main]]
   name = "Github"
