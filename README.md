@@ -3,7 +3,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/gonapps/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonapps/hugo-apps-theme/fork)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/gonapps/hugo-apps-theme/master/LICENSE.md)
 
-Hugo apps theme
+Hugo apps theme makes it easy to post web apps
 
 ## Installation
 From the root of your website
@@ -41,6 +41,10 @@ touch apps/myapp/app.css
 - full(boolean): whether your page is full page or not
 - enableDisqus(boolean): wheter your page uses disqus or not, even though this value is true you cannot enable disqus for full page
 - img(string): logo image for your page
+
+### What is full page?
+Web apps, they probably have index.html which contains html, head, body tags
+if you post index.html without removing html, head body tags you can achieve this by setting full=true
 
 ### config.toml
 - baseURL(string): base url of your site
