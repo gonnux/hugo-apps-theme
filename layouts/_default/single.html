@@ -2,8 +2,8 @@
   <div class="apps-content">
     {{- .Content -}}
     {{- if not (eq .Site.DisqusShortname "") -}}
-      {{- if isset .Params "enable_disqus" -}}
-        {{- if .Params.enable_disqus -}}
+      {{- if isset .Params "enableDisqus" -}}
+        {{- if .Params.enableDisqus -}}
           {{- template "_internal/disqus.html" . -}}
         {{- end -}}
       {{- else -}}

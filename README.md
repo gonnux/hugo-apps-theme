@@ -1,4 +1,6 @@
-
+---
+enableDisqus: true
+---
 # Hugo Apps Theme
 [![GitHub stars](https://img.shields.io/github/stars/gonapps/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonapps/hugo-apps-theme/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/gonapps/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonapps/hugo-apps-theme/fork)
@@ -40,6 +42,7 @@ touch apps/myapp/app.css
 - title(string): title for your page
 - weight(integer): weight of your page, used for sorting
 - full(boolean): whether your page is full page or not
+- enableDisqus(boolean): wheter your page uses disqus or not, even though this value is true you cannot enable disqus for full page
 - img(string): logo image for your page
 
 ### config.toml
