@@ -1,7 +1,7 @@
 # Hugo Apps Theme
 [![GitHub stars](https://img.shields.io/github/stars/gonapps/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonapps/hugo-apps-theme/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/gonapps/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonapps/hugo-apps-theme/fork)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/gonapps/hugo-apps-theme/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/gonapps/hugo-apps-theme/master/LICENSE.md)
 
 Hugo apps theme
 
@@ -72,4 +72,4 @@ This theme is inspired by following themes:<br/>
 
 ## License
 Licensed under the [MIT](https://opensource.org/licenses/MIT) License.<br/>
-See the [LICENSE](https://raw.githubusercontent.com/gonapps/hugo-apps-theme/master/LICENSE) file for more details.
+See the [LICENSE](https://raw.githubusercontent.com/gonapps/hugo-apps-theme/master/LICENSE.md) file for more details.
