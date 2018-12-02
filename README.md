@@ -43,8 +43,9 @@ touch apps/myapp/app.css
 - img(string): logo image for your page
 
 ### What is full page?
-Web apps, they probably have index.html which contains html, head, body tags
-if you post index.html without removing html, head body tags you can achieve this by setting full=true
+Web apps, they would probably have index.html which contains html, head, body tags<br/>
+if you want to post index.html without removing that tags,<br/>
+you can achieve this by setting full=true
 
 ### config.toml
 - baseURL(string): base url of your site
