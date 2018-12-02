@@ -181,12 +181,19 @@ a {
 }
 
 hr {
-  @extend .readability;
   border: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: 1rem;
   background: black;
+}
+
+.apps-header hr {
+  @extend .readability;
+}
+
+.apps-content hr {
+  height: 0.5rem;
 }
 
 table {
