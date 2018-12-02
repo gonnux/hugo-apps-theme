@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
   {{ template "_internal/opengraph.html" . }}
+  {{- if not (eq .Site.Params.googleAutoAds "") -}}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+       (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "{{ .Site.Params.googleAutoAds }}",
+            enable_page_level_ads: true
+       });
+    </script>
+  {{- end -}}
 </head>
 <body>
   <header class="apps-header">

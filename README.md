@@ -53,6 +53,7 @@ if you post index.html without removing html, head body tags you can achieve thi
 - googleAnalytics(string): google analytics tracking id
 - title(string): title of your site
 - copyright(string): copyright of your site
+- [params]googleAutoAds(string): google_ad_client value of Google Auto Ads
 - [params]avatar(string): avatar image url of index page of your site
 - [params]author(string): your name at index page
 - [params]info(string): info string below your name at index page

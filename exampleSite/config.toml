@@ -7,6 +7,7 @@ title = "Your site title"
 copyright = ""
 
 [params]
+  googleAutoAds = ""
   avatar = "https://openclipart.org/download/103855/tux.svg"
   author = "Your name"
   info = "Any info about you"
