@@ -37,9 +37,10 @@ touch apps/myapp/app.css
 
 ### Front Matter
 - title(string): title for your page
+- showTitle(boolean): whether you want to show the title
 - weight(integer): weight of your page, used for sorting
 - full(boolean): whether your page is full page or not
-- enableDisqus(boolean): wheter your page uses disqus or not, even though this value is true you cannot enable disqus for full page
+- enableDisqus(boolean): whether your page uses disqus or not, even though this value is true you cannot enable disqus for full page
 - img(string): logo image for your page
 
 ### What is full page?

@@ -1,6 +1,8 @@
 +++
 title = "no title"
-display_title = true
+showTitle = true
+date = {{ .Date }}
+enableDisqus = true
 full = false
 img = ""
 +++

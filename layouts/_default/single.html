@@ -1,5 +1,9 @@
 {{ define "main" }}
   <div class="apps-content">
+    {{- if .Params.showTitle -}}
+      <h1 style="text-align: center">{{.Params.title}}</h1>
+      <hr/>
+    {{- end -}}
     {{- .Content -}}
     {{- if not (eq .Site.DisqusShortname "") -}}
       {{- if isset .Params "enableDisqus" -}}
