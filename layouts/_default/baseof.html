@@ -5,7 +5,9 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" href="{{.Site.BaseURL}}/css/hugo-apps-theme.css"/>
+  {{ $theme := resources.Get "/css/hugo-apps-theme.css" }}
+  {{ $themeCSS := $theme | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $themeCSS.RelPermalink }}">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
