@@ -3,7 +3,7 @@
     {{ range .Pages }}
       <div class="apps-app-item">
         <div class="apps-app-icon">
-          <a href="{{ .URL }}">
+          <a href="{{ .Permalink }}">
             {{ if or (not (isset .Params "img")) (eq .Params.img "") }}
 	      <img src="{{ .Site.BaseURL }}/img/no-image.svg"/>
 	    {{ else }}
@@ -12,7 +12,7 @@
           </a>
         </div>
         <div class="apps-app-name">
-          <a href="{{ .URL }}">
+          <a href="{{ .Permalink }}">
             <h6>{{- .Title -}}</h6>
           </a>
         </div>
