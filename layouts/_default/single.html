@@ -6,7 +6,7 @@
     {{- end -}}
     {{- .Content -}}
     {{- if not (eq .Site.DisqusShortname "") -}}
-      {{- if and (isset .Params "enabledisqus") not .Params.full -}}
+      {{- if and (isset .Params "enabledisqus") (not .Params.full) -}}
         {{- if .Params.enableDisqus -}}
           {{- template "_internal/disqus.html" . -}}
         {{- end -}}
