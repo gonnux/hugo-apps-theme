@@ -1,7 +1,7 @@
 ---
 title: "no title"
 showTitle: true
-date = {{ .Date }}
+date: {{ .Date }}
 enableDisqus: true
 full: false
 img: ""
