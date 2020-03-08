@@ -4,6 +4,6 @@ showTitle: true
 date: {{ .Date }}
 enableDisqus: true
 full: false
-img: ""
+img: "/img/no-image.svg"
 tags: []
 ---
