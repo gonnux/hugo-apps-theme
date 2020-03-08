@@ -6,6 +6,9 @@ googleAnalytics = ""
 title = "Your site title"
 copyright = ""
 
+[taxonomies]
+  tag = "tags"
+
 [params]
   googleAutoAds = ""
   avatar = "https://openclipart.org/download/103855/tux.svg"

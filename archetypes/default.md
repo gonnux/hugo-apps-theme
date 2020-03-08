@@ -5,4 +5,5 @@ date: {{ .Date }}
 enableDisqus: true
 full: false
 img: ""
+tags: []
 ---

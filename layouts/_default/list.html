@@ -1,19 +1,43 @@
 {{ define "main" }}
   <div class="apps-list">
+    <!-- data/TYPENAME/ITEMNAME/hugo.json-->
+    {{ $curTypeName := ($.Permalink | path.Dir | path.Split).File }}
+    <h1>{{- $curTypeName -}}</h1>
+    {{ range $typeName, $type := .Site.Data }}
+      {{ if eq $typeName $curTypeName }}
+        {{ range $itemName, $itemMap := $type }}
+          {{ $item := $itemMap.hugo }}
+	  {{ $title := $item.title | default $itemName }}
+          {{ $itemUrl := $item.url | default (print "/" $typeName "/" $itemName | absURL) }}
+          {{ $imageUrl := $item.image | default (print "/img/no-image.svg" | absURL) }}
+          <div class="apps-app-item">
+            <div class="apps-app-icon">
+              <a href="{{- $itemUrl -}}">
+                <img src="{{- $imageUrl -}}"/>
+              </a>
+            </div>
+            <div class="apps-app-name">
+              <a href="{{- $itemUrl -}}">
+                <h6>{{- $title -}}</h6>
+              </a>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    {{ end }}
     {{ range .Pages }}
       <div class="apps-app-item">
         <div class="apps-app-icon">
-          <a href="{{ .Permalink }}">
-            {{ if or (not (isset .Params "img")) (eq .Params.img "") }}
-	      <img src="{{ .Site.BaseURL }}/img/no-image.svg"/>
-	    {{ else }}
-	      <img src="{{ .Params.img }}"/>
-	    {{ end }}
+          {{ $title := (.Permalink | path.Dir | path.Split).File }}
+          {{ $itemUrl := .Permalink }}
+          {{ $imageUrl := .Params.img | default (print "/img/no-image.svg" | absURL) }}
+          <a href="{{- $itemUrl -}}">
+            <img src="{{- $imageUrl -}}"/>
           </a>
         </div>
         <div class="apps-app-name">
-          <a href="{{ .Permalink }}">
-            <h6>{{- .Title -}}</h6>
+          <a href="{{- $itemUrl -}}">
+            <h6>{{- $title -}}</h6>
           </a>
         </div>
       </div>
