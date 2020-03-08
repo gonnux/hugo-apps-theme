@@ -18,12 +18,12 @@ copyright = ""
 [[menu.main]]
   name = "Github"
   weight = 1
-  url = "https://github.com/gonapps"
+  url = "https://github.com/gonnux"
 
 [[menu.main]]
   name = "Website"
   weight = 2
-  url = "https://gonapps.com"
+  url = "https://gonnux.com"
 
 [[menu.main]]
   name = "*Apps*"
@@ -39,14 +39,14 @@ copyright = ""
 [[params.social]]
   name = "Github"
   weight = 1
-  url = "https://github.com/gonapps"
+  url = "https://github.com/gonnux"
 
 [[params.social]]
   name = "Gitlab"
   weight = 2
-  url = "https://gitlab.com/gonapps"
+  url = "https://gitlab.com/gonnux"
 
 [[params.social]]
   name = "Website"
   weight = 3
-  url = "https://gonapps.com"
+  url = "https://gonnux.com"

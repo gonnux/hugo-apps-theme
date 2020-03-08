@@ -1,7 +1,7 @@
 # Hugo Apps Theme
-[![GitHub stars](https://img.shields.io/github/stars/gonapps-org/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonapps-org/hugo-apps-theme/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/gonapps-org/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonapps-org/hugo-apps-theme/fork)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/gonapps-org/hugo-apps-theme/master/LICENSE.md)
+[![GitHub stars](https://img.shields.io/github/stars/gonnux/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonnux/hugo-apps-theme/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/gonnux/hugo-apps-theme.svg?style=flat-square)](https://github.com/gonnux/hugo-apps-theme/fork)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/gonnux/hugo-apps-theme/master/LICENSE.md)
 
 Hugo apps theme makes it easy to post web apps
 
@@ -10,7 +10,7 @@ From the root of your website
 ```bash
 mkdir -p themes
 cd themes
-git clone https://github.com/gonapps-org/hugo-apps-theme
+git clone https://github.com/gonnux/hugo-apps-theme
 ```
 From config.toml of your site
 ```toml
@@ -79,4 +79,4 @@ This theme is inspired by following themes:<br/>
 
 ## License
 Licensed under the [MIT](https://opensource.org/licenses/MIT) License.<br/>
-See the [LICENSE](https://raw.githubusercontent.com/gonapps-org/hugo-apps-theme/master/LICENSE.md) file for more details.
+See the [LICENSE](https://raw.githubusercontent.com/gonnux/hugo-apps-theme/master/LICENSE.md) file for more details.
