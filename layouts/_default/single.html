@@ -6,10 +6,8 @@
     {{- end -}}
     {{- .Content -}}
     {{- if not (eq .Site.DisqusShortname "") -}}
-      {{- if and (isset .Params "enabledisqus") (not .Params.full) -}}
-        {{- if .Params.enableDisqus -}}
-          {{- template "_internal/disqus.html" . -}}
-        {{- end -}}
+      {{- if and (eq (.Params.enableDisqus | default false) true) (not (eq (.Params.full | default true) false)) -}}
+        {{- template "_internal/disqus.html" . -}}
       {{- end -}}
     {{- end -}}
   </div>
