@@ -1,8 +1,8 @@
-+++
-title = "no title"
-showTitle = true
+---
+title: "no title"
+showTitle: true
 date = {{ .Date }}
-enableDisqus = true
-full = false
-img = ""
-+++
+enableDisqus: true
+full: false
+img: ""
+---
